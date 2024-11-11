@@ -3,6 +3,8 @@ package gitEnv;
 import helloWorldPackage.*;
 import java.util.Scanner;
 
+import aufgabe1zuString.Aufgabe1zuString;
+
 
 
 public class Main {
@@ -11,7 +13,10 @@ public class Main {
 		
 		Scanner scanner = new Scanner(System.in);
 		int choice;
-		String[] listOfPrograms = {"Hello World!"};
+		String[] listOfPrograms = {
+				"Hello World!",
+				"String1"
+				};
 		
 		System.out.println("Welches Programm soll ausgeführt werden?");
 		System.out.println();
@@ -30,6 +35,7 @@ public class Main {
 		System.out.println();
 		switch(choice) {
 			case 0: HelloWorld.main(null); break;
+			case 1: Aufgabe1zuString.main(null); break;
 		}
 		
 		
