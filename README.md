@@ -1,4 +1,4 @@
-# Sammlung von Beispielprogrammen während der Ausbildung
+# Sammlung von Beispielprogrammen während der Ausbildung für Java
 
 Ihr könnt euch dieses Projekt auf euren Computer klonen, wenn Du git hast.
 Git ist ein CLI-Programm. Zum klonen verwendet man:
