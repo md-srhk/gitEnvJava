@@ -43,7 +43,6 @@ public class AufgabeZuTypecasting {
 		
 		myByteValue =  (byte) myIntValue;
 		myShortValue = (short) myIntValue;
-		myIntValue = (int) myIntValue;
 		myLongValue = myIntValue;
 		myFloatValue = myIntValue;
 		myDoubleValue = myIntValue;

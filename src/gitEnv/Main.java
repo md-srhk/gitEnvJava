@@ -4,6 +4,8 @@ import helloWorldPackage.*;
 import java.util.Scanner;
 
 import aufgabe1zuString.Aufgabe1zuString;
+import aufgabe2zuString.Aufgabe2zuString;
+import aufgabeZuTypecasting.AufgabeZuTypecasting;
 
 
 
@@ -15,7 +17,9 @@ public class Main {
 		int choice;
 		String[] listOfPrograms = {
 				"Hello World!",
-				"String1"
+				"String1",
+				"String2",
+				"Typecasting"
 				};
 		
 		System.out.println("Welches Programm soll ausgeführt werden?");
@@ -36,6 +40,8 @@ public class Main {
 		switch(choice) {
 			case 0: HelloWorld.main(null); break;
 			case 1: Aufgabe1zuString.main(null); break;
+			case 2: Aufgabe2zuString.main(null); break;
+			case 3: AufgabeZuTypecasting.main(null); break;
 		}
 		
 		
