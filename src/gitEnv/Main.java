@@ -15,6 +15,7 @@ public class Main {
 		
 		Scanner scanner = new Scanner(System.in);
 		int choice;
+		
 		String[] listOfPrograms = {
 				"Hello World!",
 				"String1",
@@ -23,7 +24,6 @@ public class Main {
 				};
 		
 		System.out.println("Welches Programm soll ausgeführt werden?");
-		System.out.println();
 		
 		for(int i = 0; i < listOfPrograms.length; i++) {
 			
