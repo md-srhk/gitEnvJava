@@ -13,7 +13,7 @@ public class MiniGame {
         Random randomGen = new Random();
         
         // Create a word for possible use in the word game mode
-        StringBuilder originalWord = new StringBuilder("passionsfrucht");
+        String originalWord = "passionsfrucht";
         StringBuilder word = new StringBuilder("passionsfrucht");
        
         String name;
@@ -77,6 +77,7 @@ public class MiniGame {
                         + "Gebe eine Zahl für den Spielmodus ein: ");
                 
                 gamemode = scanner.nextInt();
+                scanner.nextLine(); // This prevents issues when using nextLine() later
                 
             }
                 
@@ -99,6 +100,7 @@ public class MiniGame {
                         System.out.printf("Gebe eine Nummer ein: ");
                         
                         enteredNumber = scanner.nextInt();
+                        scanner.nextLine(); // This prevents issues when using nextLine() later
                         
                         if (enteredNumber < wantedNumber) {
                         	
@@ -133,23 +135,21 @@ public class MiniGame {
                 case 2:
                 	
                 	// Word guessing game mode
-                	StringBuilder enteredWord = new StringBuilder();
+                	String enteredWord = "";
                 	
                 	attempts = 5; // Reset number of attempts
                 	
                     System.out.printf("Ratte das Word%n");
                     System.out.printf("Die gemischte Version des Wortes: %S", mixedWord);
                     
-                    
-                    
-                    enteredWord = new StringBuilder(scanner.nextLine().toLowerCase());
+                    enteredWord = scanner.nextLine().toLowerCase();
                     
                     while(attempts > 0) {
                     	
                     	System.out.printf("%nAnzahl der verbleibenden Versuche %d%n", attempts);
                         System.out.printf("Versuche das Wort zu erraten: ");
                         
-                        enteredWord = new StringBuilder(scanner.nextLine().toLowerCase());
+                        enteredWord = scanner.nextLine().toLowerCase();
                         
                         // Checks if the words are the same
                         if(enteredWord.equals(originalWord)) {
@@ -194,5 +194,7 @@ public class MiniGame {
             	
             }
         }
+        
+        scanner.close();
     }
 }
